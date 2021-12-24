@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: i need to install apache2 server in my all 2 nodes
+    apt:
+     name: apache2
+     state: present
